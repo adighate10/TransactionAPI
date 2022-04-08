@@ -9,5 +9,5 @@ class Transaction(models.Model):
     status = models.CharField(max_length=100, default='Suceess UPI')
 
     def __str__(self):
-        return self.status
+        return "%s %s" %(self.id, self.status)
 
